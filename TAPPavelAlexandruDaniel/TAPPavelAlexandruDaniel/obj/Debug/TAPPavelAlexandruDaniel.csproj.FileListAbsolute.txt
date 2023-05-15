@@ -1,0 +1,15 @@
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\bin\Debug\TAPPavelAlexandruDaniel.exe.config
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\bin\Debug\TAPPavelAlexandruDaniel.exe
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\bin\Debug\TAPPavelAlexandruDaniel.pdb
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\obj\Debug\TAPPavelAlexandruDaniel.csproj.AssemblyReference.cache
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\obj\Debug\TAPPavelAlexandruDaniel.csproj.SuggestedBindingRedirects.cache
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\obj\Debug\TAPPavelAlexandruDaniel.Form1.resources
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\obj\Debug\TAPPavelAlexandruDaniel.Properties.Resources.resources
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\obj\Debug\TAPPavelAlexandruDaniel.csproj.GenerateResource.cache
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\obj\Debug\TAPPavelAlexandruDaniel.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\obj\Debug\TAPPavelAlexandruDaniel.exe
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\obj\Debug\TAPPavelAlexandruDaniel.pdb
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\obj\Debug\TAPPavelAlexandruDaniel.FStudenti.resources
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\obj\Debug\TAPPavelAlexandruDaniel.FSpecializari.resources
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\obj\Debug\TAPPavelAlexandruDaniel.FormInscrieri.resources
+C:\Users\alexa\Desktop\PROIECTE\INF3-Pavel-Alexandru-Daniel-TAP\TAP_Proiect1\TAPPavelAlexandruDaniel\TAPPavelAlexandruDaniel\obj\Debug\TAPPavelAlexandruDaniel.FormActInscrieri.resources

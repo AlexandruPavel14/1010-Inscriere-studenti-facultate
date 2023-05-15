@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet5" targetNamespace="http://tempuri.org/DataSet5.xsd" xmlns:mstns="http://tempuri.org/DataSet5.xsd" xmlns="http://tempuri.org/DataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TAPProj1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TAPProj1ConnectionString (Settings)" PropertyReference="ApplicationSettings.TAPPavelAlexandruDaniel.Properties.Settings.GlobalReference.Default.TAPProj1ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="InscrieriTableAdapter" GeneratorDataComponentClassName="InscrieriTableAdapter" Name="Inscrieri" UserDataComponentName="InscrieriTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TAPProj1ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Inscrieri.IdInscriere, Inscrieri.DataInscrierii, Inscrieri.IdSpecializare, Specializari.DenumireSpecializare, SUM(InscrieriContinut.TaxaInitiala) AS Total
+FROM            ((Inscrieri LEFT OUTER JOIN
+                         Specializari ON Inscrieri.IdSpecializare = Specializari.IdSpecializare) LEFT OUTER JOIN
+                         InscrieriContinut ON Inscrieri.IdInscriere = InscrieriContinut.IdInscriere)
+GROUP BY Inscrieri.IdInscriere, Inscrieri.DataInscrierii, Inscrieri.IdSpecializare, Specializari.DenumireSpecializare</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IdInscriere" DataSetColumn="IdInscriere" />
+              <Mapping SourceColumn="DataInscrierii" DataSetColumn="DataInscrierii" />
+              <Mapping SourceColumn="IdSpecializare" DataSetColumn="IdSpecializare" />
+              <Mapping SourceColumn="DenumireSpecializare" DataSetColumn="DenumireSpecializare" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="InscrieriContinutTableAdapter" GeneratorDataComponentClassName="InscrieriContinutTableAdapter" Name="InscrieriContinut" UserDataComponentName="InscrieriContinutTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TAPProj1ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        InscrieriContinut.IdInscriere, InscrieriContinut.Nrc, InscrieriContinut.IdStudent, Studenti.NumeStudent, InscrieriContinut.TaxaInitiala
+FROM            (InscrieriContinut LEFT OUTER JOIN
+                         Studenti ON InscrieriContinut.IdStudent = Studenti.IdStudent)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IdInscriere" DataSetColumn="IdInscriere" />
+              <Mapping SourceColumn="Nrc" DataSetColumn="Nrc" />
+              <Mapping SourceColumn="IdStudent" DataSetColumn="IdStudent" />
+              <Mapping SourceColumn="NumeStudent" DataSetColumn="NumeStudent" />
+              <Mapping SourceColumn="TaxaInitiala" DataSetColumn="TaxaInitiala" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet5" msprop:Generator_DataSetName="DataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Inscrieri" msprop:Generator_RowEvHandlerName="InscrieriRowChangeEventHandler" msprop:Generator_RowDeletedName="InscrieriRowDeleted" msprop:Generator_RowDeletingName="InscrieriRowDeleting" msprop:Generator_RowEvArgName="InscrieriRowChangeEvent" msprop:Generator_TablePropName="Inscrieri" msprop:Generator_RowChangedName="InscrieriRowChanged" msprop:Generator_RowChangingName="InscrieriRowChanging" msprop:Generator_TableClassName="InscrieriDataTable" msprop:Generator_RowClassName="InscrieriRow" msprop:Generator_TableVarName="tableInscrieri" msprop:Generator_UserTableName="Inscrieri">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdInscriere" msprop:Generator_ColumnPropNameInRow="IdInscriere" msprop:Generator_ColumnPropNameInTable="IdInscriereColumn" msprop:Generator_ColumnVarNameInTable="columnIdInscriere" msprop:Generator_UserColumnName="IdInscriere" type="xs:int" minOccurs="0" />
+              <xs:element name="DataInscrierii" msprop:Generator_ColumnPropNameInRow="DataInscrierii" msprop:Generator_ColumnPropNameInTable="DataInscrieriiColumn" msprop:Generator_ColumnVarNameInTable="columnDataInscrierii" msprop:Generator_UserColumnName="DataInscrierii" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdSpecializare" msprop:Generator_ColumnPropNameInRow="IdSpecializare" msprop:Generator_ColumnPropNameInTable="IdSpecializareColumn" msprop:Generator_ColumnVarNameInTable="columnIdSpecializare" msprop:Generator_UserColumnName="IdSpecializare" type="xs:int" minOccurs="0" />
+              <xs:element name="DenumireSpecializare" msprop:Generator_ColumnPropNameInRow="DenumireSpecializare" msprop:Generator_ColumnPropNameInTable="DenumireSpecializareColumn" msprop:Generator_ColumnVarNameInTable="columnDenumireSpecializare" msprop:Generator_UserColumnName="DenumireSpecializare" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_UserColumnName="Total" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="InscrieriContinut" msprop:Generator_RowEvHandlerName="InscrieriContinutRowChangeEventHandler" msprop:Generator_RowDeletedName="InscrieriContinutRowDeleted" msprop:Generator_RowDeletingName="InscrieriContinutRowDeleting" msprop:Generator_RowEvArgName="InscrieriContinutRowChangeEvent" msprop:Generator_TablePropName="InscrieriContinut" msprop:Generator_RowChangedName="InscrieriContinutRowChanged" msprop:Generator_RowChangingName="InscrieriContinutRowChanging" msprop:Generator_TableClassName="InscrieriContinutDataTable" msprop:Generator_RowClassName="InscrieriContinutRow" msprop:Generator_TableVarName="tableInscrieriContinut" msprop:Generator_UserTableName="InscrieriContinut">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdInscriere" msprop:Generator_ColumnPropNameInRow="IdInscriere" msprop:Generator_ColumnPropNameInTable="IdInscriereColumn" msprop:Generator_ColumnVarNameInTable="columnIdInscriere" msprop:Generator_UserColumnName="IdInscriere" type="xs:int" minOccurs="0" />
+              <xs:element name="Nrc" msprop:Generator_ColumnPropNameInRow="Nrc" msprop:Generator_ColumnPropNameInTable="NrcColumn" msprop:Generator_ColumnVarNameInTable="columnNrc" msprop:Generator_UserColumnName="Nrc" type="xs:int" minOccurs="0" />
+              <xs:element name="IdStudent" msprop:Generator_ColumnPropNameInRow="IdStudent" msprop:Generator_ColumnPropNameInTable="IdStudentColumn" msprop:Generator_ColumnVarNameInTable="columnIdStudent" msprop:Generator_UserColumnName="IdStudent" type="xs:int" minOccurs="0" />
+              <xs:element name="NumeStudent" msprop:Generator_ColumnPropNameInRow="NumeStudent" msprop:Generator_ColumnPropNameInTable="NumeStudentColumn" msprop:Generator_ColumnVarNameInTable="columnNumeStudent" msprop:Generator_UserColumnName="NumeStudent" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TaxaInitiala" msprop:Generator_ColumnPropNameInRow="TaxaInitiala" msprop:Generator_ColumnPropNameInTable="TaxaInitialaColumn" msprop:Generator_ColumnVarNameInTable="columnTaxaInitiala" msprop:Generator_UserColumnName="TaxaInitiala" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
